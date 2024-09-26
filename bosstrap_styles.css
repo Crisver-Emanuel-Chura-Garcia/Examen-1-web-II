@@ -1,0 +1,32 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    flex-grow: 1;
+    margin: 25%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    height: 15%;
+}
+
+/* Estilo de la sección emergente */
+.info-section {
+    display: none;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Mostrar la sección al anclar */
+#info:target,
+#table:target {
+    display: block;
+}
